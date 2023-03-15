@@ -6,7 +6,6 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: white;
-    padding: 1rem 2rem 1.5rem 2rem;
 }
 
 .avatar {
@@ -29,7 +28,8 @@
     color: hsl(212, 23%, 69%);
 }
 
-.shareIconCircle, .shareIconCircleActive {
+.shareIconCircle,
+.shareIconCircleActive {
     background-color: hsl(210, 46%, 95%);
     height: 30px;
     width: 30px;
@@ -40,15 +40,15 @@
     margin-left: auto;
 }
 
-.shareIcon, .shareIconActive {
+.shareIcon,
+.shareIconActive {
     object-fit: cover;
     cursor: pointer;
 }
 
 
 .activeBottom {
-    padding: 1rem 2rem;
-    background-color: hsl(217, 19%, 35%);
+    padding: 1rem 2rem 1.5rem 2rem;
     width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -61,6 +61,7 @@
 .share {
     text-transform: uppercase;
     letter-spacing: 0.3rem;
+    color: hsl(212, 23%, 69%);
 }
 
 .icon,
