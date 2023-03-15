@@ -1,9 +1,10 @@
 import styles from "../styles/Information.module.css"
 import Bottom from "./Bottom"
 
+
 export default function Information() {
     return (
-        <>
+        <div>
             <div className={styles.info}>
                 <h1 className={styles.heading1}>
                     Shift the overall look and feel by adding these wonderful
@@ -18,6 +19,6 @@ export default function Information() {
             <Bottom author="Michelle Appleton"
                 date="28 Jun 2020"
             />
-        </>
+        </div>
     )
 }

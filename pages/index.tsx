@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main className={manrope.className}>
         <ImageBox />
-        <Information/>
+        <Information />
       </main>
     </>
   )

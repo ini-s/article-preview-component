@@ -26,3 +26,19 @@ main {
   width: 85%;
   margin: 5rem auto;
 }
+
+@media screen and (min-width: 767px) {
+  main {
+    display: grid;
+    grid-template-columns: 250px 420px;
+    justify-content: center;
+    width: 700px;
+    margin: 10rem auto;
+  }
+}
+
+@media screen and (min-width: 969px) {
+  main {
+    width: 800px;
+  }
+}

@@ -1,4 +1,5 @@
-.bottom {
+.bottom,
+.activeDesktop {
     display: flex;
     align-items: center;
     width: 100%;
@@ -6,6 +7,10 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: white;
+}
+
+.activeDesktop {
+    display: none;
 }
 
 .avatar {
@@ -47,8 +52,8 @@
 }
 
 
-.activeBottom {
-    padding: 1rem 2rem 1.5rem 2rem;
+.activeMobile {
+    padding: 1rem 2rem 1rem 2rem;
     width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -56,6 +61,8 @@
     display: flex;
     align-items: center;
     font-size: 13px;
+    background-color: hsl(217, 19%, 35%);
+    position: relative;
 }
 
 .share {
@@ -67,6 +74,31 @@
 .icon,
 .share {
     margin-right: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.socials {
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    display: flex;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 10px;
+    bottom: 5rem;
+    right: -1.8rem;
+}
+
+.triangleDown {
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 13px solid hsl(217, 19%, 35%);
+    bottom: -0.6rem;
+    left: 50%;
+    position: absolute;
 }
 
 @media screen and (max-width: 350px) {
@@ -98,5 +130,38 @@
 
     .shareIconActive {
         height: 10px;
+    }
+}
+
+
+@media screen and (min-width: 767px) {
+
+    .bottom {
+        border-bottom-left-radius: 0;
+        padding: 0.5rem 2rem 1.5rem 2rem;
+        font-size: 13px;
+    }
+
+    .activeMobile {
+        display: none;
+    }
+
+    .activeDesktop {
+        display: flex;
+        padding: 1rem 2rem 1.5rem 2rem;
+    }
+
+    .shareIconCircle,
+    .shareIconCircleActive {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width: 967px) {
+    .socials {
+        right: 0.4rem;
+    }
+    .triangleDown{
+        left: 44%;
     }
 }
