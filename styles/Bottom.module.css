@@ -1,0 +1,101 @@
+.bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    padding: 1rem 2rem 1.5rem 2rem;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bottomInfo {
+    margin-left: 1rem;
+}
+
+.author {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+.date {
+    color: hsl(212, 23%, 69%);
+}
+
+.shareIconCircle, .shareIconCircleActive {
+    background-color: hsl(210, 46%, 95%);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.shareIcon, .shareIconActive {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.activeBottom {
+    padding: 1rem 2rem;
+    background-color: hsl(217, 19%, 35%);
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.share {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.icon,
+.share {
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 350px) {
+
+    .icon,
+    .share {
+        margin-right: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 313px) {
+
+    .bottom,
+    .share {
+        font-size: 11px;
+    }
+
+    .icon,
+    .share {
+        margin-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .shareIconCircleActive {
+        height: 20px;
+        width: 25px;
+    }
+
+    .shareIconActive {
+        height: 10px;
+    }
+}
