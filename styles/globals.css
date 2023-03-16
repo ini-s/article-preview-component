@@ -42,3 +42,9 @@ main {
     width: 800px;
   }
 }
+
+@media screen and (min-width: 1300px) {
+  main {
+    margin: 15rem auto;
+  }
+}
